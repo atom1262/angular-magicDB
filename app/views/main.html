@@ -2,12 +2,24 @@
   <h2>For Magicians, by Magicians</h2>
   <p class="lead">
     <img src="images/top_hat_mustache.png" alt="Top Hat Logo"><br>
-    The only site dedicated to magic and magic news
+    A site dedicated to magic and magic news
   </p>
   <h5>Find Your Newest Trick Below</h5>
   <div class="search">
-    <input type="text" class="form-control" ng-model="search" placeholder="Find a trick...">
+    <input type="text" class="form-control" ng-model="search" placeholder="Find a trick by Title or Type...">
   </div>
+</div>
+
+<div>
+  <form ng-submit="addTrick()">
+  <input type="text" ng-model="trickTitle" placeholder="Trick Title">
+  <select name="Type" ng-model="trickType">
+    <option value="Opener">Opener</option>
+    <option value="Closer">Closer</option>
+    <option value="Other">Other</option>
+  </select>
+  <input class="btn-primary" type="submit" value="add">
+  </form>
 </div>
 
 <table>

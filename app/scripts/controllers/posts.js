@@ -10,6 +10,7 @@
 angular.module('angularMagicDbApp')
   .controller('PostsCtrl', function ($scope) {
     $scope.posts = [
-      { title: 'HTML5 Boilerplate', body: 'Lorem ipsum...', author: 'J.D. Salinger' }
+      { title: 'The Most Recent Post', body: 'Lorem ipsum...', author: 'J.D. Salinger' },
+      { title: 'Another Blog Post', body: 'Lorem ipsum...', author: 'Samuel Clemens' }
     ];
   });

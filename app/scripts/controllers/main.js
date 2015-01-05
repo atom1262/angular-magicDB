@@ -16,4 +16,10 @@ angular.module('angularMagicDbApp')
     {title: 'Disappear', description: 'Test Description', type: 'Closer'},
     {title: 'Wow another one', description: 'Test Description', type: 'Opener'}];
 
-  });
+  $scope.addTrick = function () {
+    $scope.tricks.push({ title: $scope.trickTitle, type: $scope.trickType });
+    $scope.trickTitle = '';
+    $scope.trickType = '';
+  };
+
+});
