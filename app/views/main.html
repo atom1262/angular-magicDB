@@ -10,10 +10,25 @@
 <div class="search">
   <div class="row">
     <div class="input-group">
-      <input type="text" class="form-control" placeholder="Search for...">
+      <input type="text" class="form-control" ng-model="search" placeholder="Search for...">
       <span class="input-group-btn">
         <button class="btn btn-default glyphicon glyphicon-search" type="button"></button>
       </span>
     </div>
   </div>
 </div>
+
+<table>
+  <thead>
+  <tr>
+    <th>Trick</th>
+    <th>Type</th>
+  </tr>
+  </thead>
+  </tbody>
+  <tr ng-repeat="trick in tricks | filter:search | orderBy:'title'">
+    <td><a href="#/trick" target="_blank">{{ trick.title }}</a></td>
+    <td>{{ trick.type }}</td>
+  </tr>
+  </tbody>
+</table>
