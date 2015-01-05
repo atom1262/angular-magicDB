@@ -13,4 +13,11 @@ angular.module('angularMagicDbApp')
       { title: 'The Most Recent Post', body: 'Lorem ipsum...', author: 'J.D. Salinger' },
       { title: 'Another Blog Post', body: 'Lorem ipsum...', author: 'Samuel Clemens' }
     ];
+
+    $scope.addPost = function() {
+      $scope.posts.push({ title: $scope.postTitle, body: $scope.postBody, author: $scope.postAuthor });
+      $scope.postTitle = '';
+      $scope.postBody = '';
+      $scope.postAuthor = '';
+    };
   });

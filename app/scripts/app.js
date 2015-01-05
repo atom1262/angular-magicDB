@@ -34,6 +34,10 @@ angular
         templateUrl: 'views/posts.html',
         controller: 'PostsCtrl'
       })
+      .when('/posts/new', {
+        templateUrl: 'views/new_post.html',
+        controller: 'PostsCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
