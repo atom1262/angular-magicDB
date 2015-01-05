@@ -11,7 +11,7 @@
  *
  * Main module of the application.
  */
-angular
+var app = angular
   .module('angularMagicDbApp', [
     'ngAnimate',
     'ngCookies',
@@ -32,10 +32,6 @@ angular
       })
       .when('/posts', {
         templateUrl: 'views/posts.html',
-        controller: 'PostsCtrl'
-      })
-      .when('/posts/new', {
-        templateUrl: 'views/new_post.html',
         controller: 'PostsCtrl'
       })
       .otherwise({
