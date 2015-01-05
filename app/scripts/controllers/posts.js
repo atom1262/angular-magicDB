@@ -2,13 +2,13 @@
 
 /**
  * @ngdoc function
- * @name angularMagicDbApp.controller:AboutCtrl
+ * @name angularMagicDbApp.controller:PostsCtrl
  * @description
- * # AboutCtrl
+ * # PostsCtrl
  * Controller of the angularMagicDbApp
  */
 angular.module('angularMagicDbApp')
-  .controller('AboutCtrl', function ($scope) {
+  .controller('PostsCtrl', function ($scope) {
     $scope.posts = [
       'HTML5 Boilerplate',
       'AngularJS',
