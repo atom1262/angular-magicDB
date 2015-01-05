@@ -10,8 +10,6 @@
 angular.module('angularMagicDbApp')
   .controller('PostsCtrl', function ($scope) {
     $scope.posts = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
+      { title: 'HTML5 Boilerplate', body: 'Lorem ipsum...', author: 'J.D. Salinger' }
     ];
   });
